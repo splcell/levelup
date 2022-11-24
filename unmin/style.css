@@ -269,7 +269,10 @@ textarea {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -1
+    height: 100%;
+    z-index: -1;
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .product__title {
@@ -750,16 +753,6 @@ textarea {
     }
 }
 
-@media (max-width:1180px) {
-    .product__bg {
-        display: none
-    }
-    .product__descr,
-    .product__title {
-        color: #fff
-    }
-}
-
 @media (max-width:865px) {
     .structure__inner {
         -webkit-box-orient: vertical;
@@ -837,6 +830,13 @@ textarea {
 }
 
 @media (max-width:475px) {
+    .product__bg {
+        display: none
+    }
+    .product__descr,
+    .product__title {
+        color: #fff
+    }
     .promo {
         padding-top: 3rem
     }
